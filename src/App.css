@@ -9,7 +9,11 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 5s linear;
+    animation: App-logo-spin infinite 2s linear;
+  }
+
+  .App-logo-text {
+    animation: App-logo-move infinite 1s linear;
   }
 }
 
@@ -32,11 +36,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-#title{
+@keyframes App-logo-move {
+  from {
+    transform:rotate(-10deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+#title {
   color: coral;
 }
